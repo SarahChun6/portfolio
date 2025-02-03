@@ -17,9 +17,9 @@
                 <li><a href="#hobbies">Hobbies</a></li>
             </ul>
         </nav>
+        <p><a href="mailto:sarahchun66@gmail.com">sarahchun66@gmail.com</a> | <a href="https://www.linkedin.com/in/sarahchun66/">LinkedIn</a> | <button>Github</button></p>
     </header>
-    <hr>
-
+    
     <aside>
         <p><b><i>Skills</i></b>: C, C++, Java, Python, Git, GNU Make, and Vim <br><b><i>Languages</i></b>: English (native), Mandarin (fluent), Cantonese (basic)</p>        
     </aside>
@@ -38,7 +38,7 @@
         <section id="projects">
             <h2>Projects</h2>
             <ul>
-                <li><a href="project1.html">Project 1</a> - A web app that does something cool.</li>
+                <li><a href="project1.html">Simple Social Media Website</a> - A web app that stores message posts and likes.</li>
                 <li><a href="project2.html">Project 2</a> - Another project description.</li>
             </ul>
         </section>
@@ -47,27 +47,30 @@
         <section id="hobbies">
             <h2>Hobbies</h2>
             <picture>
-                <source srcset="small_sunset.jpg" media="(max-width: 200px)">
-                <source srcset="medium_sunset.PNG" media="(min-width: 201px)">
+                <source srcset="small_sunset.jpg" media="(max-width: 400px)">
+                <source srcset="medium_sunset.PNG" media="(min-width: 401px)">
                 <img src="image-default.jpg" alt="Sunset View from Pepper Canyon Vela">
             </picture>
         </section>
         <hr>
+
+        <section id="extra">
+            <h2>Javascript Code in this Website</h2>
+            <pre><code>
+            function greet() {
+                console.log("Hello, World!");
+            }
+            </code></pre>
+        </section>
+        
     </main>
     <hello-world onconnected="console.log('Hello World!')"></hello-world>
 
     <footer>
-        <p><a href="mailto:sarahchun66@gmail.com">sarahchun66@gmail.com</a> | <a href="https://www.linkedin.com/in/sarahchun66/">LinkedIn</a> |
-            <time datetime="2025-02-02">February 2, 2025</time> by <span>Sarah Chun</span>
-        </p>
+        <p><time datetime="2025-02-02">February 2, 2025</time> by <span id="signature">Sarah Chun</span></p>
     </footer>
 </body>
-<h2>Javascript Code in this Website</h2>
-<pre><code>
-function greet() {
-    console.log("Hello, World!");
-}
-</code></pre>
+
 <script>
     customElements.define("hello-world", class extends HTMLElement {
         connectedCallback() {
