@@ -13,15 +13,19 @@
   -->
   <form action="https://portfolio-schun.netlify.app/post" method="POST">
 
-    <label>Name
-      <input type="text" id="your-name" name="your-name" required>
-    </label>
-    <br>
-    <label>Email
-      <input type="email" id="your-email" name="your-email" required>
-    </label>
-    <br>
-    <label>Message
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label>Name
+        <input type="text" id="your-name" name="your-name" required>
+      </label>
+      <br>
+      <label>Email
+        <input type="email" id="your-email" name="your-email" required>
+      </label>
+      <br>
+    </fieldset>
+    
+    <label>Message <br>
       <textarea id="message" name="message" rows="5"></textarea>
     </label>
 
