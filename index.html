@@ -54,15 +54,28 @@
         <section id="hobbies">
             <h2>Hobbies</h2>
             <picture>
-                <source srcset="small_sunset.jpg" media="(max-width: 600px)">
-                <source srcset="medium_sunset.jpg" media="(min-width: 601px)">
+                <source srcset="small_sunset.jpg" media="(max-width: 200px)">
+                <source srcset="medium_sunset.jpg" media="(min-width: 201px)">
                 <img src="image-default.jpg" alt="Sunset View from Pepper Canyon Vela">
             </picture>
         </section>
     </main>
+    <hello-world onconnected="console.log('Hello World!')"></hello-world>
 
     <footer>
         <p>2025 My Portfolio | <a href="contact.html">Contact Me</a></p>
     </footer>
 </body>
+<pre><code>
+function greet() {
+    console.log("Hello, World!");
+}
+</code></pre>
+<script>
+    customElements.define("hello-world", class extends HTMLElement {
+        connectedCallback() {
+            this.dispatchEvent(new Event("connected"));
+        }
+    });
+</script>
 </html>
