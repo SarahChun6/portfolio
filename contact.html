@@ -24,10 +24,38 @@
         <input type="email" id="your-email" name="your-email" required>
       </label>
       <br>
+      <label>Occupation
+        <select name="occupation" id="occupation">
+          <option value="recruiter">Recruiter</option>
+      
+          <optgroup label="Student">
+            <option value="high-school">High School</option>
+            <option value="college">College</option>
+            <option value="other-student">Other</option>
+          </optgroup>
+      
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <br>
+      <label>Location
+        <input list="cities" id="city" name="city">
+        <datalist id="cities">
+          <option value="New York">
+          <option value="San Diego">
+          <option value="San Jose">
+          <option value="San Francisco">
+          <option value="Los Angeles">
+          <option value="Chicago">
+          <option value="Houston">
+          <option value="Phoenix">
+        </datalist>
+      </label>
+      <br>
     </fieldset>
 
     <fieldset>
-      <legend>Message</legend>
+      <legend>Other</legend>
       <label>Message <br>
         <textarea id="message" name="message" rows="5"></textarea>
       </label>
@@ -38,20 +66,8 @@
 
   <p>Thank you for getting in touch!</p>
 
-  <h1>Fruit Selection</h1>
 
-  <select name="occupation" id="occupation">
-    <option value="recruiter">Recruiter</option>
-
-    <optgroup label="Student">
-      <option value="high-school">High School</option>
-      <option value="college">College</option>
-      <option value="other-student">Other</option>
-    </optgroup>
-
-    <option value="other">Other</option>
-
-  </select>
+  
 
 </body>
 </html>
