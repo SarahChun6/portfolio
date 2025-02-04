@@ -100,15 +100,15 @@
             <dl>
                 <dt>Sunsets</dt>
                 <dd>I love watching the sun go down past the waterline. My favorite view on campus is from Pepper Canyon Vela 23rd floor.</dd>
+                <picture>
+                    <source srcset="small_sunset.jpg" media="(max-width: 400px)">
+                    <source srcset="medium_sunset.PNG" media="(min-width: 401px)">
+                    <img src="image-default.jpg" alt="Sunset View from Pepper Canyon Vela">
+                </picture>
                 
                 <dt>Badminton</dt>
                 <dd>This sport is my source of exercise and socialization.</dd>
             </dl>
-            <picture>
-                <source srcset="small_sunset.jpg" media="(max-width: 400px)">
-                <source srcset="medium_sunset.PNG" media="(min-width: 401px)">
-                <img src="image-default.jpg" alt="Sunset View from Pepper Canyon Vela">
-            </picture>
         </section>
         <hr>
 
@@ -125,9 +125,10 @@
                   console.log("Hello, world!");
                 </code>
               </pre>
-              <figcaption>Example of a JavaScript console log statement.</figcaption>
+              <figcaption>JavaScript console log statement code.</figcaption>
             </figure>
         </section>
+        <hr>
         
     </main>
     <hello-world onconnected="console.log('Hello World!')"></hello-world>
