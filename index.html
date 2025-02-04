@@ -36,19 +36,17 @@
         </address>
     </header>
 
-    <highlight-box>
-        <aside>
-            <p><b><i>Skills</i></b>: C, C++, Java, Python, Git, GNU Make, and Vim <br><b><i>Languages</i></b>: English (native), Mandarin (fluent), Cantonese (basic)</p>        
-        </aside>
-        <hr>
-    
-        <search>
-            <form action="/search" method="GET">
-                <input type="search" name="q" placeholder="Search my portfolio...">
-                <button type="submit">Search</button>
-            </form>
-        </search>
-    </highlight-box>
+    <aside>
+        <p><b><i>Skills</i></b>: C, C++, Java, Python, Git, GNU Make, and Vim <br><b><i>Languages</i></b>: English (native), Mandarin (fluent), Cantonese (basic)</p>        
+    </aside>
+    <hr>
+
+    <search>
+        <form action="/search" method="GET">
+            <input type="search" name="q" placeholder="Search my portfolio...">
+            <button type="submit">Search</button>
+        </form>
+    </search>
     
     <main>
         <section id="bio">
@@ -71,14 +69,18 @@
 
         <section id="extra">
             <h2>Javascript Code in this Website</h2>
-            <figure>
-                <pre><code>
+            
+            <highlight-box>
+                <figure>
+                    <pre><code>
 function greet() {
     console.log("Hello, World!");
 }
-                </code></pre>
-                <figcaption>JavaScript console log statement code.</figcaption>
-            </figure>
+                    </code></pre>
+                    <figcaption>JavaScript console log statement code.</figcaption>
+                </figure>
+            </highlight-box>
+            
         </section>
         <hr>
         
@@ -95,13 +97,14 @@ function greet() {
             <p>This website has been changed from <del datetime="2025-02-02">February 2</del> to <ins datetime="2025-02-02">February 4</ins>.</p>
         </div>
     </footer>
+
+    <script>
+        customElements.define("hello-world", class extends HTMLElement {
+            connectedCallback() {
+                this.dispatchEvent(new Event("connected"));
+            }
+        });
+    </script>
 </body>
 
-<script>
-    customElements.define("hello-world", class extends HTMLElement {
-        connectedCallback() {
-            this.dispatchEvent(new Event("connected"));
-        }
-    });
-</script>
 </html>
