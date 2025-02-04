@@ -8,12 +8,8 @@
 <body>
 
   <h1>Contact Me!</h1>
-  
-  <form action="submit_form.php" method="POST">
-  
-  <!--
+    
   <form action="https://portfolio-schun.netlify.app/post" method="POST">
-  -->
     <fieldset>
       <legend>Personal Information</legend>
       <label>Name
@@ -27,6 +23,7 @@
       <label>Occupation
         <select name="occupation" id="occupation">
           <option value="recruiter">Recruiter</option>
+          <option value="soft-engineer">Software Engineer</option>
       
           <optgroup label="Student">
             <option value="high-school">High School</option>
@@ -64,7 +61,16 @@
     <button>Send</button>
   </form>
 
-  <p>Thank you for getting in touch!</p>
+  <dialog>Thank you for getting in touch!</dialog>
+
+  <!--
+  <template id="my-template">
+    <div>
+      <h2>Title</h2>
+      <p>This is some content inside the template.</p>
+    </div>
+  </template>
+  -->
 
 
   
