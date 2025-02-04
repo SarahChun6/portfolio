@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarah Chun</title>
     <link rel="stylesheet" href="styles.css">
-    <style></style>
+    <style>
+        highlight-box{
+            background: lightblue;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,19 +35,20 @@
             <p>Github: (add link)</p>
         </address>
     </header>
+
+    <div>
+        <aside>
+            <p><b><i>Skills</i></b>: C, C++, Java, Python, Git, GNU Make, and Vim <br><b><i>Languages</i></b>: English (native), Mandarin (fluent), Cantonese (basic)</p>        
+        </aside>
+        <hr>
     
-    <aside>
-        <p><b><i>Skills</i></b>: C, C++, Java, Python, Git, GNU Make, and Vim <br><b><i>Languages</i></b>: English (native), Mandarin (fluent), Cantonese (basic)</p>        
-    </aside>
-    <hr>
-
-    <search>
-        <form action="/search" method="GET">
-            <input type="search" name="q" placeholder="Search my portfolio...">
-            <button type="submit">Search</button>
-        </form>
-    </search>
-
+        <search>
+            <form action="/search" method="GET">
+                <input type="search" name="q" placeholder="Search my portfolio...">
+                <button type="submit">Search</button>
+            </form>
+        </search>
+    </div>
     
     <main>
         <section id="bio">
@@ -66,18 +71,13 @@
 
         <section id="extra">
             <h2>Javascript Code in this Website</h2>
-            <!--<pre><code>
-            function greet() {
-                console.log("Hello, World!");
-            }
-            </code></pre>-->
             <figure>
-              <pre>
-                <code>
-                  console.log("Hello, world!");
-                </code>
-              </pre>
-              <figcaption>JavaScript console log statement code.</figcaption>
+                <pre><code>
+function greet() {
+    console.log("Hello, World!");
+}
+                </code></pre>
+                <figcaption>JavaScript console log statement code.</figcaption>
             </figure>
         </section>
         <hr>
@@ -90,10 +90,10 @@
               "If you love life, don't waste time, for time is what life is made of."
               <cite>— Bruce Lee</cite>
         </blockquote>
-        <div id="signage">
+        <highlight-box is="section" id="signage">
             <p><time datetime="2025-02-02">February 2, 2025</time> by <span id="signature">Sarah Chun</span></p>
             <p>This website has been changed from <del datetime="2025-02-02">February 2</del> to <ins datetime="2025-02-02">February 4</ins>.</p>
-        </div>
+        </highlight-box>
     </footer>
 </body>
 
