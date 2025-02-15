@@ -1,0 +1,52 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full viewport height */
+}
+
+/* Header and Footer */
+header, footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex: 1; /* Takes up all available space */
+  flex-wrap: wrap;
+}
+
+/* Main Content */
+main {
+  flex: 2; /* Main content takes more space */
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+/* Sidebars */
+.sidebar {
+  flex: 1; /* Equal width sidebars */
+  padding: 20px;
+  background: #ddd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex: none;
+    width: 100%;
+  }
+}
