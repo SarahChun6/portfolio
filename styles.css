@@ -6,11 +6,15 @@
 } */
 
 @media (prefers-color-scheme: dark) { 
-  --background-color: #003366;
+  --header-background-color: #003366;
+  --body-background-color: #202020;
+  --sidebar-background-color: #404040;
   --text-color: white;
 }
 @media (prefers-color-scheme: light) {
-  --background-color: #99CCFF;
+  --header-background-color: #99CCFF;
+  --body-background-color: #ddd;
+  --sidebar-background-color: #f4f4f4;
   --text-color: black;
 }
 
@@ -76,14 +80,14 @@ header, footer {
 main {
   flex: 2; /* Main content takes more space */
   padding: 20px;
-  background: #ddd;
+  background: --body-background-color;
 }
 
 /* Sidebars */
 .sidebar {
   flex: 1; /* Equal width sidebars */
   padding: 20px;
-  background: #f4f4f4;
+  background: --sidebar-background-color;
 }
 
 /* Responsive Adjustments */
