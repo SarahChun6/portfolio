@@ -86,6 +86,9 @@ address a {
     padding-right: 0.625rem; 
 }
 */
+a {
+  color: color-mix(in display-p3, var(--text-color) 90%, var(--header-background-color) 10%);
+}
 
 * a:hover {
   color: color-mix(in display-p3, var(--text-color) 80%, var(--header-background-color) 20%);
