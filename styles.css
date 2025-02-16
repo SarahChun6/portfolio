@@ -99,6 +99,10 @@ main {
   align-items: center;
 }
 
+#left-bio > h2{
+  padding: 0;
+}
+
 #right-bio {
   flex: 1; /* Text takes available space */
 }
