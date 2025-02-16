@@ -154,37 +154,18 @@ button:active {
     box-shadow: none;
 }
 
-#badminton {
+.image-container {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the text content */
+  justify-content: center; /* Centers images in the section */
+  gap: 15px; /* Adds space between images */
+  flex-wrap: wrap; /* Ensures wrapping on small screens */
 }
 
-#badminton img {
-  display: block;
-  max-width: 100%;
+.image-container img {
+  max-width: 100%; /* Ensures responsiveness */
   height: auto;
-  border-radius: 10px; /* Optional: Rounded corners */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Subtle shadow */
-}
-
-#badminton p {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-/* Image Container */
-#badminton img {
-  width: 150px; /* Fixed width for consistency */
-  height: auto;
-}
-
-/* Horizontal Layout */
-#badminton img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px; /* Adds space between images */
+  border-radius: 8px; /* Optional: Soft rounded corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Light shadow */
 }
 
 /* Animations */
