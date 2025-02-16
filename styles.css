@@ -5,6 +5,15 @@
   box-sizing: border-box;
 } */
 
+@media (prefers-color-scheme: dark) { 
+  --background-color: #003366;
+  --text-color: white;
+}
+@media (prefers-color-scheme: light) {
+  --background-color: #99CCFF;
+  --text-color: white;
+}
+
 header hgroup {
     padding: 0; /* Removes all padding */
     margin: 0;  /* Optional: Removes margin if needed */
@@ -18,8 +27,8 @@ body {
 
 /* Header and Footer */
 header, footer {
-  background: #99CCFF;
-  color: black;
+  background: --background-color;
+  color: --text-color;
   text-align: center;
   padding: 15px;
 }
