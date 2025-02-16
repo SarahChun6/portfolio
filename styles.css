@@ -95,8 +95,8 @@ body {
   font-family: var(--font-primary);
   display: flex;
   flex-direction: column;
-  min-height:0.95vh;
-  min-height: 0.95dvh; /* viewport height */
+  min-height: 95vh;
+  min-height: 95dvh; /* viewport height */
   background-color: var(--body-background-color); /**/
   transition: background-color 0.3s ease-in-out; /**/
 }
@@ -146,8 +146,8 @@ main {
 .sidebar {
   flex: 1; /* Equal width sidebars */
   padding: 1.25rem;
-  max-width: 0.95vw;
-  max-width: 0.95dvw;
+  max-width: 95vw;
+  max-width: 95dvw;
   background: #ddd; 
   background: color-mix(in display-p3, var(--header-background-color) 70%, var(--text-color) 30%);
   transition: transform 0.3s ease-in-out;
