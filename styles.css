@@ -137,13 +137,14 @@ main {
 }
 
 /* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
   .sidebar {
     flex: none;
-    width: 100%;
+    width: 95%;
   }
 }
 
