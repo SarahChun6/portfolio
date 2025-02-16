@@ -9,12 +9,14 @@
   --header-background-color: #003366;
   --body-background-color: #202020;
   --sidebar-background-color: #404040;
+  --icon-color: white;
   --text-color: white;
 }
 @media (prefers-color-scheme: light) {
   --header-background-color: #99CCFF;
   --body-background-color: #ddd;
   --sidebar-background-color: #f4f4f4;
+  --icon-color: black;
   --text-color: black;
 }
 
@@ -41,7 +43,7 @@ nav ul li a:hover {
 
 
 address i {
-    margin-right: 8px; /* Adjust spacing as needed */
+    margin-right: 8px; 
 }
 
 address a:hover {
@@ -49,10 +51,10 @@ address a:hover {
 }
 
 address i {
-    color: black; /* Default color for icons */
+    color: --icon-color;
 }
 address a {
-    padding-right: 10px; /* Adds space between icon and text */
+    padding-right: 10px; 
 }
 
 body {
@@ -76,11 +78,23 @@ header, footer {
   flex-wrap: wrap;
 }
 
-/* Main Content */
-main {
-  flex: 2; /* Main content takes more space */
+#bio {
+  display: flex;
+  align-items: center;  /* Aligns items vertically */
+  gap: 20px; /* Adds space between the image and text */
+  /*flex: 1;  Main content takes more space */
   padding: 20px;
   background: --body-background-color;
+}
+
+#left-bio {
+    display: flex;
+    flex-direction: column; /* Stack h2 and img vertically */
+    align-items: center; /* Center-align the image under the heading */
+}
+
+#right-bio {
+    flex: 1; /* Allows paragraph to take up remaining space */
 }
 
 /* Sidebars */
