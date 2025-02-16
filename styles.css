@@ -37,6 +37,7 @@ nav ul {
     margin: 0;  
 }
 nav ul li {
+    display: inline-block; /* Allows transform to work */
     padding: 0.625rem 1.25rem; 
     transition: transform 0.3s ease-in-out;
 }
