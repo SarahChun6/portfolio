@@ -7,20 +7,21 @@
 
 @media (prefers-color-scheme: dark) { 
   :root {
-    --header-background-color: #003366;
-    --body-background-color: #202020;
-    --sidebar-background-color: #404040;
-    --icon-color: white;
-    --text-color: white;
+    --header-background-color: color(display-p3 0.0 0.2 0.4); /* Dark navy */
+    --body-background-color: color(display-p3 0.12 0.12 0.12); /* Dark gray */
+    --sidebar-background-color: color(display-p3 0.25 0.25 0.25); /* Medium gray */
+    --icon-color: color(display-p3 1 1 1); /* Pure white */
+    --text-color: color(display-p3 0.9 0.9 0.9); /* Light grayish white */
   }
 }
+
 @media (prefers-color-scheme: light) {
   :root {
-    --header-background-color: #99CCFF;
-    --body-background-color: #ddd;
-    --sidebar-background-color: #f4f4f4;
-    --icon-color: black;
-    --text-color: black;
+    --header-background-color: color(display-p3 0.6 0.8 1); /* Light sky blue */
+    --body-background-color: color(display-p3 0.85 0.85 0.85); /* Light gray */
+    --sidebar-background-color: color(display-p3 0.95 0.95 0.95); /* Very light gray */
+    --icon-color: color(display-p3 0 0 0); /* Black */
+    --text-color: color(display-p3 0.1 0.1 0.1); /* Dark gray */
   }
 }
 
@@ -61,6 +62,11 @@ address a {
     padding-right: 10px; 
 }
 
+address a:hover {
+  color: color-mix(in display-p3, var(--text-color) 80%, var(--header-background-color) 20%);
+}
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -69,11 +75,12 @@ body {
 
 /* Header and Footer */
 header, footer {
-  background: var(--header-background-color);
+  background: color-mix(in display-p3, var(--header-background-color) 90%, black 10%);
   color: var(--text-color);
   text-align: center;
   padding: 15px;
 }
+
 
 /* Main Container */
 main {
@@ -90,7 +97,11 @@ main {
   justify-content: space-between; /* Ensures image and text stay separate */
   gap: 20px;
   padding: 20px;
-  background: var(--body-background-color);
+  background: linear-gradient(
+    to right,
+    color(display-p3 0.2 0.2 0.2),
+    color-mix(in display-p3, var(--body-background-color) 60%, white 40%)
+  );
 }
 
 #left-bio {
@@ -111,7 +122,8 @@ main {
 .sidebar {
   flex: 1; /* Equal width sidebars */
   padding: 20px;
-  background: var(--sidebar-background-color);
+  background: #ddd; 
+  background: color-mix(in display-p3, var(--sidebar-background-color) 70%, white 30%);
 }
 
 /* Responsive Adjustments */
