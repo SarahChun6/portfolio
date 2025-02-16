@@ -11,7 +11,7 @@
 }
 @media (prefers-color-scheme: light) {
   --background-color: #99CCFF;
-  --text-color: white;
+  --text-color: black;
 }
 
 hgroup header {
