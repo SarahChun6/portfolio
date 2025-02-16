@@ -161,12 +161,6 @@ button:active {
   flex-wrap: wrap; /* Ensures wrapping on small screens */
 }
 
-.image-container img {
-  max-width: 100%; /* Ensures responsiveness */
-  height: auto;
-  border-radius: 8px; /* Optional: Soft rounded corners */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Light shadow */
-}
 
 /* Animations */
 @keyframes fadeIn {
