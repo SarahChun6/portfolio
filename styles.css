@@ -80,7 +80,7 @@ main {
   display: flex;
   flex-direction: row;
   flex: 1; /* Takes up all available space */
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 #bio {
