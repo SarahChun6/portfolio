@@ -38,6 +38,7 @@ nav ul {
 }
 nav ul li {
     padding: 0.625rem 1.25rem; 
+    transition: transform 0.3s ease-in-out;
 }
 nav ul li a:hover {
     /*font-size: 150%;*/
