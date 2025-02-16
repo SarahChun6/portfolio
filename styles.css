@@ -33,7 +33,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px 20px; 
+    padding: 0.625rem 1.25rem; 
 }
 
 nav ul li a:hover {
@@ -42,14 +42,14 @@ nav ul li a:hover {
 
 
 address i {
-    margin-right: 8px; 
+    margin-right: 0.5rem; 
 }
 
 address i {
     color: var(--icon-color);
 }
 address a {
-    padding-right: 10px; 
+    padding-right: 0.625rem; 
 }
 
 * a:hover {
@@ -60,7 +60,7 @@ address a {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensures full viewport height */
+  min-height: 90vh; /* viewport height */
 }
 
 /* Header and Footer */
@@ -85,8 +85,8 @@ main {
   flex: 2; /* Takes more space in the center */
   align-items: center; /* Aligns bio content vertically */
   justify-content: space-between; /* Ensures image and text stay separate */
-  gap: 20px;
-  padding: 20px;
+  gap: 1.25rem;
+  padding: 1.25rem;
   background: linear-gradient(
     to right,
     color(display-p3 0.2 0.2 0.2),
@@ -100,10 +100,6 @@ main {
   align-items: center;
 }
 
-#left-bio > h2{
-  padding: 0;
-}
-
 #right-bio {
   flex: 1; /* Text takes available space */
 }
@@ -111,7 +107,7 @@ main {
 /* Sidebars */
 .sidebar {
   flex: 1; /* Equal width sidebars */
-  padding: 20px;
+  padding: 1.25rem;
   background: #ddd; 
   background: color-mix(in display-p3, var(--header-background-color) 70%, var(--text-color) 30%);
 }
