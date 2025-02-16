@@ -76,14 +76,14 @@ header, footer {
 main {
   flex: 2; /* Main content takes more space */
   padding: 20px;
-  background: #f4f4f4;
+  background: #ddd;
 }
 
 /* Sidebars */
 .sidebar {
   flex: 1; /* Equal width sidebars */
   padding: 20px;
-  background: #ddd;
+  background: #f4f4f4;
 }
 
 /* Responsive Adjustments */
