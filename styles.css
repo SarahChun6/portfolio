@@ -88,16 +88,6 @@ main {
   background: --body-background-color;
 }
 
-#left-bio {
-    display: flex;
-    flex-direction: column; /* Stack h2 and img vertically */
-    align-items: center; /* Center-align the image under the heading */
-}
-
-#right-bio {
-    flex: 1; /* Allows paragraph to take up remaining space */
-}
-
 /* Sidebars */
 .sidebar {
   flex: 1; /* Equal width sidebars */
