@@ -17,7 +17,11 @@
 }
 
 html {
-  font-size: 16;
+  font-size: 16px;
+}
+
+hgroup{
+  padding: 1rem 1rem;
 }
 
 header hgroup h1, h3 {
