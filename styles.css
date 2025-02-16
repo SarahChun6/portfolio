@@ -72,7 +72,7 @@ body {
 
 /* Header and Footer */
 header, footer {
-  background: color-mix(in display-p3, var(--header-background-color) 90%, black 10%);
+  background: color-mix(in display-p3, var(--header-background-color) 90%, var(--text-color) 10%);
   color: var(--text-color);
   text-align: center;
   padding: 15px;
@@ -97,7 +97,7 @@ main {
   background: linear-gradient(
     to right,
     color(display-p3 0.2 0.2 0.2),
-    color-mix(in display-p3, var(--header-background-color) 70%, var(--text-color) 30%)
+    color-mix(in display-p3, var(--header-background-color) 80%, var(--text-color) 20%)
   );
 }
 
