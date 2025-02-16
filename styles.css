@@ -51,7 +51,9 @@ address a:hover {
 address i {
     color: black; /* Default color for icons */
 }
-
+address a {
+    padding-right: 10px; /* Adds space between icon and text */
+}
 
 body {
   display: flex;
