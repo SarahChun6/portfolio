@@ -5,7 +5,7 @@
   box-sizing: border-box;
 } */
 
-hgroup {
+header hgroup {
     padding: 0; /* Removes all padding */
     margin: 0;  /* Optional: Removes margin if needed */
 }
