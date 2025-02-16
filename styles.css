@@ -5,26 +5,19 @@
   box-sizing: border-box;
 } */
 
-@media (prefers-color-scheme: dark) { 
-  :root {
-    --header-background-color: color(display-p3 0.098 0.098 0.439); /* Midnight Blue */
-/*    --header-background-color: color(display-p3 0.0 0.2 0.4); /* Dark navy */
-    --body-background-color: color(display-p3 0.12 0.12 0.12); /* Dark gray */
-    --sidebar-background-color: color(display-p3 0.25 0.25 0.25); /* Medium gray */
-    --icon-color: color(display-p3 1 1 1); /* Pure white */
-    --text-color: color(display-p3 0.9 0.9 0.9); /* Light grayish white */
-  }
+:root {
+  --header-background-color: #483D8B;
+  --body-background-color: #6A5ACD;
+  --sidebar-background-color: #7B68EE;
+  --icon-color: black;
+  --text-color: black;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --header-background-color: color(display-p3 0.6 0.8 1); /* Light sky blue */
-    --body-background-color: color(display-p3 0.85 0.85 0.85); /* Light gray */
-    --sidebar-background-color: color(display-p3 0.95 0.95 0.95); /* Very light gray */
-    --icon-color: color(display-p3 0 0 0); /* Black */
-    --text-color: color(display-p3 0.1 0.1 0.1); /* Dark gray */
-  }
+html {
+  font-size: 1vw;
+  font-size: 1dvw; /* 1% of the viewport width */
 }
+
 
 header hgroup h1, h3 {
     padding: 0; 
@@ -44,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a:hover {
-    font-size: 36px; 
+    font-size: 150%; 
 } 
 
 
@@ -75,7 +68,7 @@ header, footer {
   background: color-mix(in display-p3, var(--header-background-color) 90%, var(--text-color) 10%);
   color: var(--text-color);
   text-align: center;
-  padding: 15px;
+  padding: 1rem;
 }
 
 
@@ -121,6 +114,28 @@ main {
   padding: 20px;
   background: #ddd; 
   background: color-mix(in display-p3, var(--header-background-color) 70%, var(--text-color) 30%);
+}
+
+
+@media (prefers-color-scheme: dark) { 
+  :root {
+    --header-background-color: color(display-p3 0.098 0.098 0.439); /* Midnight Blue */
+/*    --header-background-color: color(display-p3 0.0 0.2 0.4); /* Dark navy */
+    --body-background-color: color(display-p3 0.12 0.12 0.12); /* Dark gray */
+    --sidebar-background-color: color(display-p3 0.25 0.25 0.25); /* Medium gray */
+    --icon-color: color(display-p3 1 1 1); /* Pure white */
+    --text-color: color(display-p3 0.9 0.9 0.9); /* Light grayish white */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --header-background-color: color(display-p3 0.6 0.8 1); /* Light sky blue */
+    --body-background-color: color(display-p3 0.85 0.85 0.85); /* Light gray */
+    --sidebar-background-color: color(display-p3 0.95 0.95 0.95); /* Very light gray */
+    --icon-color: color(display-p3 0 0 0); /* Black */
+    --text-color: color(display-p3 0.1 0.1 0.1); /* Dark gray */
+  }
 }
 
 /* Responsive Adjustments */
