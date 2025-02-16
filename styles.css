@@ -39,11 +39,10 @@ nav ul {
 nav ul li {
     display: inline-block; /* Allows transform to work */
     padding: 0.625rem 1.25rem; 
-    transition: transform 0.3s ease-in-out;
+    transition: font-size 0.3s ease-in-out;
 }
 nav ul li a:hover {
-    /*font-size: 150%;*/
-    transform: scale(1.1); 
+    font-size: 120%;
 } 
 
 address i {
