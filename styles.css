@@ -52,10 +52,6 @@ address i {
     margin-right: 8px; 
 }
 
-address a:hover {
-    color: white; /* Blue color on hover */
-}
-
 address i {
     color: var(--icon-color);
 }
@@ -63,7 +59,7 @@ address a {
     padding-right: 10px; 
 }
 
-address a:hover {
+* a:hover {
   color: color-mix(in display-p3, var(--text-color) 80%, var(--header-background-color) 20%);
 }
 
