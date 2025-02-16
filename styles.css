@@ -19,6 +19,10 @@ header hgroup h1, h3 {
     margin: 0;  /* Optional: Removes margin if needed */
 }
 
+address i {
+    margin-right: 8px; /* Adjust spacing as needed */
+}
+
 address a:hover {
     color: white; /* Blue color on hover */
 }
