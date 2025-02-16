@@ -6,18 +6,22 @@
 } */
 
 @media (prefers-color-scheme: dark) { 
-  --header-background-color: #003366;
-  --body-background-color: #202020;
-  --sidebar-background-color: #404040;
-  --icon-color: white;
-  --text-color: white;
+  :root {
+    --header-background-color: #003366;
+    --body-background-color: #202020;
+    --sidebar-background-color: #404040;
+    --icon-color: white;
+    --text-color: white;
+  }
 }
 @media (prefers-color-scheme: light) {
-  --header-background-color: #99CCFF;
-  --body-background-color: #ddd;
-  --sidebar-background-color: #f4f4f4;
-  --icon-color: black;
-  --text-color: black;
+  :root {
+    --header-background-color: #99CCFF;
+    --body-background-color: #ddd;
+    --sidebar-background-color: #f4f4f4;
+    --icon-color: black;
+    --text-color: black;
+  }
 }
 
 header hgroup h1, h3 {
@@ -51,7 +55,7 @@ address a:hover {
 }
 
 address i {
-    color: --icon-color;
+    color: var(--icon-color);
 }
 address a {
     padding-right: 10px; 
@@ -65,8 +69,8 @@ body {
 
 /* Header and Footer */
 header, footer {
-  background: --background-color;
-  color: --text-color;
+  background: var(--background-color);
+  color: var(--text-color);
   text-align: center;
   padding: 15px;
 }
@@ -103,7 +107,7 @@ main {
 .sidebar {
   flex: 1; /* Equal width sidebars */
   padding: 20px;
-  background: --sidebar-background-color;
+  background: var(--sidebar-background-color);
 }
 
 /* Responsive Adjustments */
