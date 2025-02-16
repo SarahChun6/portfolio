@@ -5,6 +5,11 @@
   box-sizing: border-box;
 } */
 
+hgroup {
+    padding: 0; /* Removes all padding */
+    margin: 0;  /* Optional: Removes margin if needed */
+}
+
 body {
   display: flex;
   flex-direction: column;
