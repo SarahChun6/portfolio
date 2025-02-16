@@ -14,7 +14,7 @@
   --text-color: white;
 }
 
-header hgroup {
+hgroup header {
     padding: 0; /* Removes all padding */
     margin: 0;  /* Optional: Removes margin if needed */
 }
