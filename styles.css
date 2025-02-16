@@ -72,9 +72,9 @@ header, footer {
 }
 
 /* Main Container */
-.container {
+main {
   display: flex;
-  align-items: center;  /* Aligns items vertically */
+  flex-direction: row;
   flex: 1; /* Takes up all available space */
   flex-wrap: wrap;
 }
