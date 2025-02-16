@@ -36,7 +36,8 @@ nav ul li {
     padding: 0.625rem 1.25rem; 
 }
 nav ul li a:hover {
-    font-size: 150%; 
+    /*font-size: 150%;*/
+    transform: scale(1.1); 
 } 
 
 address i {
