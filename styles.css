@@ -29,6 +29,36 @@ header hgroup h1, h3 {
     margin: 0;
 }
 
+@scope (nav) {
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  ul li {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    transition: font-size 0.3s ease-in-out;
+  }
+  ul li a:hover {
+    font-size: 120%;
+  }
+}
+
+@scope (address) {
+  i {
+    margin-right: 0.5rem;
+    color: var(--icon-color);
+  }
+  a {
+    padding-right: 0.625rem;
+  }
+}
+
+/*
 nav ul {
     display: flex;         
     justify-content: space-evenly; 
@@ -38,7 +68,7 @@ nav ul {
     flex-wrap: wrap;
 }
 nav ul li {
-    display: inline-block; /* Allows transform to work */
+    display: inline-block; /* Allows transform to work */ /*
     padding: 0.625rem 1.25rem; 
     transition: font-size 0.3s ease-in-out;
 }
@@ -55,6 +85,7 @@ address i {
 address a {
     padding-right: 0.625rem; 
 }
+*/
 
 * a:hover {
   color: color-mix(in display-p3, var(--text-color) 80%, var(--header-background-color) 20%);
