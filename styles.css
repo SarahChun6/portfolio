@@ -74,6 +74,7 @@ header, footer {
 /* Main Container */
 .container {
   display: flex;
+  align-items: center;  /* Aligns items vertically */
   flex: 1; /* Takes up all available space */
   flex-wrap: wrap;
 }
