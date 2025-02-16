@@ -116,6 +116,11 @@ main {
   flex-direction: row;
   flex: 1; /* Takes up all available space */
   flex-wrap: wrap;
+  color: var(--text-color);
+}
+
+#form{
+    align-items: center;
 }
 
 #bio {
@@ -177,7 +182,7 @@ main {
   }
   .sidebar {
     flex: none;
-    width: 95%;
+    width: 90%;
   }
 }
 
