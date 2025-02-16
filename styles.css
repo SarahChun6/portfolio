@@ -16,10 +16,11 @@
 
 header hgroup h1, h3 {
     padding: 0; 
+    margin: 0;
 }
-
+/*
 nav ul {
-    display: flex;          /* Enables Flexbox */
+    display: flex;         
     justify-content: space-evenly; 
     list-style: none; 
     padding: 0; 
@@ -27,18 +28,13 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px 20px;  /* Adds spacing inside each item */
-}
-
-nav ul li a {
-    text-decoration: none;  /* Removes underline */
-    color: white;           /* Text color */
-    font-size: 18px;        /* Adjust text size */
+    padding: 10px 20px; 
 }
 
 nav ul li a:hover {
-    font-size: 36px; /* Doubles the size (if the base size is 18px) */
-}
+    font-size: 36px; 
+} */
+
 
 address i {
     margin-right: 8px; /* Adjust spacing as needed */
