@@ -19,6 +19,15 @@ header hgroup h1, h3 {
     margin: 0;  /* Optional: Removes margin if needed */
 }
 
+address a:hover {
+    color: white; /* Blue color on hover */
+}
+
+address i {
+    color: black; /* Default color for icons */
+}
+
+
 body {
   display: flex;
   flex-direction: column;
