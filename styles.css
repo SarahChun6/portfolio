@@ -60,7 +60,7 @@ address a {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 90vh; /* viewport height */
+  min-height: 95vh; /* viewport height */
 }
 
 /* Header and Footer */
