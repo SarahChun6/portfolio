@@ -1,9 +1,9 @@
-/* General Reset */
+/* General Reset 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 body {
   display: flex;
@@ -13,8 +13,8 @@ body {
 
 /* Header and Footer */
 header, footer {
-  background: #333;
-  color: white;
+  background: #99CCFF;
+  color: black;
   text-align: center;
   padding: 15px;
 }
