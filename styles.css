@@ -100,7 +100,7 @@ main {
   background: linear-gradient(
     to right,
     color(display-p3 0.2 0.2 0.2),
-    color-mix(in display-p3, var(--body-background-color) 60%, white 40%)
+    color-mix(in display-p3, var(--header-background-color) 60%, var(--text-color) 40%)
   );
 }
 
@@ -123,7 +123,7 @@ main {
   flex: 1; /* Equal width sidebars */
   padding: 20px;
   background: #ddd; 
-  background: color-mix(in display-p3, var(--sidebar-background-color) 70%, white 30%);
+  background: color-mix(in display-p3, var(--header-background-color) 70%, var(--text-color) 30%);
 }
 
 /* Responsive Adjustments */
