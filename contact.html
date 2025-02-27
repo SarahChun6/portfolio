@@ -11,7 +11,8 @@
   <header>  <h1>Contact Me!</h1> </header>
 
   <main id="form">
-    <form action="https://portfolio-schun.netlify.app/post" method="POST">
+    <form action="https://httpbin.org/post" method="POST">
+      <input type="hidden" name="possible_bot" value="true">
       <fieldset class="sidebar">
         <legend>Personal Information</legend>
         <label>Name
@@ -66,7 +67,7 @@
         <button id="closeDialog">Close</button>
       </dialog>
   
-      <button>Send</button>
+      <button type="submit">Send</button>
     </form>
   </main>
 
