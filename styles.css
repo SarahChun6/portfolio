@@ -92,6 +92,10 @@ main {
   justify-content: center;
 }
 
+#message {
+  width: 95%;
+}
+
 #bio {
   display: flex;
   flex: 2; /* Takes more space in the center */

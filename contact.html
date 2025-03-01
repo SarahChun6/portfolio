@@ -15,16 +15,16 @@
       <input type="hidden" name="possible_bot" value="true">
       <fieldset class="sidebar">
         <legend>Personal Information</legend>
-        <label>Name
-          <input type="text" id="your-name" name="your-name" required>
+        <label>Name*
+          <input type="text" id="your-name" name="your-name" maxlength="50" required autofocus>
         </label>
         <br>
-        <label>Email
-          <input type="email" id="your-email" name="your-email" required>
+        <label>Email*
+          <input type="email" id="your-email" name="your-email" maxlength="50" required>
         </label>
         <p>Please fill out both <kbd>name</kbd> and <kbd>email</kbd> fields before submitting.</p>
         <br>
-        <label>Occupation
+        <label>Occupation*
           <select name="occupation" id="occupation">
             <option value="recruiter">Recruiter</option>
             <option value="soft-engineer">Software Engineer</option>
@@ -57,8 +57,8 @@
   
       <fieldset class="sidebar">
         <legend>Other</legend>
-        <label>Message <br>
-          <textarea id="message" name="message" rows="5"></textarea>
+        <label>Message (500 character limit)<br>
+          <textarea id="message" name="message" rows="5" maxlength="500"></textarea>
         </label>
       </fieldset>
   
