@@ -4,8 +4,8 @@
   --header-background-color: #483D8B;
   --body-background-color: #6A5ACD;
   --sidebar-background-color: #7B68EE;
-  --icon-color: black;
-  --text-color: black;
+  --icon-color: white;
+  --text-color: white;
   --font-primary: 'Poppins', Arial, sans-serif;
 }
 
@@ -170,7 +170,40 @@ button:active {
   height: 200px; /* Maintains aspect ratio */
 }
 
-/* Animations */
+/* Force Light Mode When `data-theme="light"` */
+[data-theme="light"] {
+  --header-background-color: color(display-p3 0.6 0.8 1); /* Light sky blue */
+  --body-background-color: color(display-p3 0.85 0.85 0.85); /* Light gray */
+  --sidebar-background-color: color(display-p3 0.95 0.95 0.95); /* Very light gray */
+  --icon-color: color(display-p3 0 0 0); /* Black */
+  --text-color: color(display-p3 0.1 0.1 0.1); /* Dark gray */
+}
+
+/* Force Dark Mode When `data-theme="dark"` */
+[data-theme="dark"] {
+  --header-background-color: color(display-p3 0.098 0.098 0.439); /* Midnight Purple */
+  --body-background-color: color(display-p3 0.12 0.12 0.12); /* Dark gray */
+  --sidebar-background-color: color(display-p3 0.25 0.25 0.25); /* Medium gray */
+  --icon-color: color(display-p3 1 1 1); /* Pure white */
+  --text-color: color(display-p3 0.9 0.9 0.9); /* Light grayish white */
+}
+
+.error-message {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  color: red;
+  font-size: xx-small;
+}
+
+.error {
+  animation: flash 0.5s;
+}
+
+@keyframes flash {
+  0% { background-color: #ffcccc; }
+  100% { background-color: transparent; }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -196,7 +229,7 @@ section:has(img) {
 }
 
 @media (prefers-color-scheme: dark) { 
-  :root {
+  :root:not([data-theme]){
     --header-background-color: color(display-p3 0.098 0.098 0.439); /* Midnight Purple */
     --body-background-color: color(display-p3 0.12 0.12 0.12); /* Dark gray */
     --sidebar-background-color: color(display-p3 0.25 0.25 0.25); /* Medium gray */
@@ -206,7 +239,7 @@ section:has(img) {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme]){
     --header-background-color: color(display-p3 0.6 0.8 1); /* Light sky blue */
     --body-background-color: color(display-p3 0.85 0.85 0.85); /* Light gray */
     --sidebar-background-color: color(display-p3 0.95 0.95 0.95); /* Very light gray */
