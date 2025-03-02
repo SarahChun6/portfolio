@@ -26,7 +26,7 @@
       <fieldset class="sidebar">
         <legend>Personal Information</legend>
         <label>Name*
-          <input type="text" id="your-name" name="your-name" pattern="[A-Za-z\s'-]+" maxlength="50" required autofocus>
+          <input type="text" id="your-name" name="your-name" pattern="[A-Za-z '\-]+" maxlength="50" required autofocus>
           <span class="error-message" id="name-error"></span>
         </label>
         <br>
@@ -74,11 +74,8 @@
           <span id="char-count" style="color:black;">Characters remaining: 500</span> 
         </label>
       </fieldset>
-  
-      <dialog id="incompleteForm">
-        <p>Please fill out both <kbd>name</kbd> and <kbd>email</kbd> fields before submitting.</p>
-        <button id="closeDialog">Close</button>
-      </dialog>
+
+      <input type="hidden" id="form-errors" name="form-errors" value="">
   
       <button type="submit">Send</button>
     </form>

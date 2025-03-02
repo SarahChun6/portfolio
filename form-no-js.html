@@ -16,7 +16,7 @@
       <fieldset class="sidebar">
         <legend>Personal Information</legend>
         <label>Name*
-          <input type="text" id="your-name" name="your-name" maxlength="50" required autofocus>
+          <input type="text" id="your-name" name="your-name" pattern="[A-Za-z '\-]+" maxlength="50" required autofocus>
         </label>
         <br>
         <label>Email*
@@ -61,11 +61,6 @@
           <textarea id="message" name="message" rows="5" maxlength="500"></textarea>
         </label>
       </fieldset>
-  
-      <dialog id="incompleteForm">
-        <p>Please fill out both <kbd>name</kbd> and <kbd>email</kbd> fields before submitting.</p>
-        <button id="closeDialog">Close</button>
-      </dialog>
   
       <button type="submit">Send</button>
     </form>
