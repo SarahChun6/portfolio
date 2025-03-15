@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Poker",
+        "image": "projectPictures/poker1.png",
+        "description": "Used a doubly linked list to store the 52 cards to be drawn from randomly.",
+        "link": "pokerProject.html"
+    },
+    {
+        "name": "Billards",
+        "image": "projectPictures/billards1.png",
+        "description": "Used socket programming to allow for an interative multiplayer billards game animated based on physics principles.",
+        "link": "billardsProject.html"
+    }
+]
