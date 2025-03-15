@@ -10,5 +10,17 @@
         "image": "projectPictures/billards1.png",
         "description": "Used socket programming to allow for an interative multiplayer billards game animated based on physics principles.",
         "link": "billardsProject.html"
+    },
+    {
+        "name": "Submarine Shooter",
+        "image": "projectPictures/subShooter1.png",
+        "description": "Two player underwater themed shooter game.",
+        "link": "subShooter.html"
+    },
+    {
+        "name": "Pixel Art Canvas",
+        "image": "projectPictures/pixelArt1.png",
+        "description": "Used a stack data structure to keep track of paint actions.",
+        "link": "pixelArt.html"
     }
 ]
