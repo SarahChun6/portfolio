@@ -43,12 +43,32 @@ fetch("projects.json")
     })
     .catch(error => console.error("Error loading JSON:", error));
 
-    document.getElementById("load-local").addEventListener("click", () => {
-        const projectsContainer = document.getElementById("projects-container");
-    
-        projectsContainer.innerHTML = ""; // clear existing content
-    
-        const localProjects = JSON.parse(localStorage.getItem("projects")) || [];
-        createProjCards(projectsContainer, localProjects);
-    });
-    
+document.getElementById("load-local").addEventListener("click", () => {
+    const projectsContainer = document.getElementById("projects-container");
+    console.log("Projects loaded from localStorage");
+
+    projectsContainer.innerHTML = ""; // clear existing content
+
+    const localProjects = JSON.parse(localStorage.getItem("projects")) || [];
+    createProjCards(projectsContainer, localProjects);
+});
+
+document.getElementById("load-remote").addEventListener("click", () => {
+    const projectsContainer = document.getElementById("projects-container");
+    console.log("Fetching projects from remote server...");
+
+    projectsContainer.innerHTML = ""; // clear existing content
+
+    fetch("https://my-json-server.typicode.com/YOUR_USERNAME/YOUR_REPO/projects")
+    .then(response => response.json())
+    .then(data => {
+        // Store fetched data in localStorage
+        localStorage.setItem("projects", JSON.stringify(data));
+        console.log("Projects fetched from remote and stored locally.");
+
+        // Generate project cards
+        createProjCards(projectsContainer, data);
+    })
+    .catch(error => console.error("Error loading remote JSON:", error));
+
+});
