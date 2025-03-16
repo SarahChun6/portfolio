@@ -161,6 +161,7 @@ button:active {
 .image-container {
   display: flex;
   justify-content: center; /* Centers images in the section */
+  align-items: center;
   gap: 15px; /* Adds space between images */
   flex-wrap: wrap; /* Ensures wrapping on small screens */
 }

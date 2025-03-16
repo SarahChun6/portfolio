@@ -32,6 +32,7 @@ function createProjCards(container, projects) {
     });
 }
 
+/*
 fetch("projects.json")
     .then(response => response.json())
     .then(data => {
@@ -42,6 +43,7 @@ fetch("projects.json")
         createProjCards(container, data);
     })
     .catch(error => console.error("Error loading JSON:", error));
+*/
 
 document.getElementById("load-local").addEventListener("click", () => {
     const projectsContainer = document.getElementById("projects-container");
@@ -59,7 +61,7 @@ document.getElementById("load-remote").addEventListener("click", () => {
 
     projectsContainer.innerHTML = ""; // clear existing content
 
-    fetch("https://my-json-server.typicode.com/YOUR_USERNAME/YOUR_REPO/projects")
+    fetch("https://my-json-server.typicode.com/SarahChun6/portfolio/projects")
     .then(response => response.json())
     .then(data => {
         // Store fetched data in localStorage
